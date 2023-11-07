@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    cursor: pointer;
+}
+
+body {
+    background-color: white;
+}
+
+/* --------------------scrollbar----------------------- */
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background-color: #ffffff;
+    transition: 0.15s;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c1c1c1;
+  }
+
+/* --------------------/scrollbar----------------------- */
+
+/* --------------------menu----------------------- */
+
+.flex-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+}
+
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-right ul li {
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.nav-right ul a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.nav-right .search-box {
+    background-color: #f6f6f6;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.nav-right .search-box input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.nav-right .search-box .search-icon {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-right .search-box:hover {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+.nav-right ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-left img {
+    width: 60px;
+}
+
+.nav-left p {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-left a {
+    color: black;
+    text-decoration: none;
+}
+
+/* --------------------/menu----------------------- */
+
+/* --------------------banner----------------------- */
+
+#flex-banner {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(assets/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+
+.banner-text {
+    color: white;
+    padding: 12%;
+    font-size: 30px;
+}
+
+.banner-text em {
+    font-size: 20px;
+    line-height: 0;
+    font-weight: 500;
+}
+
+/* --------------------/banner----------------------- */
+
+/* --------------------product card----------------------- */
+
+#container {
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+
+.card {
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+    width: 370px;
+    margin: 30px 16px;
+}
+
+.card h1 {
+    margin: 380px 0 5px 10px;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 5px 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-1 {
+    background-image: url(assets/limp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.87;
+}
+
+.product-2 {
+    background-image: url(assets/glasstec.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.87;
+}
+
+.product-3 {
+    background-image: url(assets/manu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.87;
+}
+
+.card button {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 50px;
+    width: 345px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.card button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card button:active {
+    background-color: transparent;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+.glasstec {
+    transform: scale(1.04);
+}
+
+.glasstec:hover {
+    transform: scale(1.08);
+}
+
+.product-text {
+    margin-right: 0px;
+    cursor: default;
+}
+
+.product-text h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.product-text p {
+    font-size: 19px;
+    width: 550px;
+    font-weight: 500;
+}
+
+.product-rectangle {
+    height: 3px;
+    width: 40px;
+    background-color: black;
+    margin: 7px 0 10px ;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+/* --------------------/product card----------------------- */
+
+/* --------------------depoimentos----------------------- */
+
+#container-depoimentos {
+    margin: 0 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 6px;
+}
+
+#container-depoimentos h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.depoimento {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.depoimento:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento .icon-div {
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profile-icon {
+    font-size: 40px;    
+    color: white;
+}
+
+.depoimento-box {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.depoimento h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.depoimento q {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+/* --------------------/depoimentos----------------------- */
+
+/* --------------------nos----------------------- */
+
+#nos-container {
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+    margin: 20px;
+    background-image: url(assets/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.sobre {
+    background-color: white;
+}
+
+.sobre h1 {
+    font-size: 30px;
+}
+
+.sobre p {
+    width: 600px;
+    font-size: 19px;
+    text-align: justify;
+    font-weight: 500;
+    margin: 2px 0 20px;
+}
+
+.formulario h1 {
+    font-size: 30px;
+}
+
+.formulario p {
+    width: 600px;
+    font-size: 19px;
+    text-align: justify;
+    font-weight: 500;
+    margin: 2px 0 10px;
+}
+
+.formulario .first-h2 {
+    margin-top: 0;
+}
+
+.formulario h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.formulario input {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.formulario .text-box {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+}
+
+.dp {
+    height: 100px;
+    cursor: text;
+}
+
+.formulario button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.formulario button:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.formulario button:active {
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --------------------/nos----------------------- */
+
+/* --------------------rodape----------------------- */
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+    align-items: center;
+}
+
+.footer p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.loc {
+    width: 300px;
+}
+
+.footer-line {
+    background-color: black;
+    height: 80px;
+    width: 1px;
+}
+
+
